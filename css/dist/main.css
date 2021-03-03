@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222831;
+  font-family: "Jura", sans-serif;
+}
+
+header {
+  background-color: #393e46;
+}
+header .first-header-section {
+  display: flex;
+  align-items: center;
+}
+header .first-header-section h2 {
+  margin-left: 1%;
+}
+header .first-header-section h2 span {
+  font-size: 1.75em;
+}
+header .first-header-section h2 span:first-child {
+  color: #86f3b8;
+}
+header .first-header-section h2 span:last-child {
+  color: #00e0ff;
+  padding-left: 0.5%;
+}
+header .first-header-section nav {
+  margin-left: 10%;
+}
+header .first-header-section nav ul {
+  display: flex;
+  list-style: none;
+}
+header .first-header-section nav ul li {
+  text-align: center;
+}
+header .first-header-section nav ul li a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #a6fff2;
+  text-transform: uppercase;
+}
+header .first-header-section nav ul li:not(:first-child) {
+  padding-left: 3%;
+}
+header .second-header-section {
+  width: 100%;
+  background-image: url(css/images/first-section-image.jpg);
+}

@@ -1,0 +1,61 @@
+//main colors values
+$first-color: #eeeeee;
+$second-color: #a6fff2;
+$third-color: #86f3b8;
+$fourth-color: #00e0ff;
+$fifth-color: #ff5722;
+$first-background-color: #393e46;
+$second-background-color: #222831;
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $second-background-color;
+    font-family: 'Jura', sans-serif;
+}
+
+//navigation and photo-section
+
+header{
+    background-color: $first-background-color;
+    .first-header-section{
+        display: flex;
+        align-items: center;
+        h2{
+            margin-left: 1%;
+            span{
+                font-size: 1.75em;
+            }
+            span:first-child{
+                color: $third-color;
+            }
+            span:last-child{
+                color: $fourth-color;
+                padding-left: 0.5%;
+            }
+        }
+        nav{
+            margin-left: 10%;
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    text-align: center;
+                    a{
+                        text-decoration: none;
+                        font-size: 1.5em;
+                        color: $second-color;
+                        text-transform: uppercase;
+                    }
+                }
+                li:not(:first-child){
+
+                    padding-left: 3%;
+                }
+            }
+        }
+    }
+    .second-header-section{
+        width: 100%;
+        background-image: url(css/images/first-section-image.jpg);
+    }
+}
