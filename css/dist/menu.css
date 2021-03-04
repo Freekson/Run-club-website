@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #222831;
+    font-family: "Jura", sans-serif;
+    overflow-x: hidden;
+  }
+  
+  nav {
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+  }
+  nav #checkbox-menu, nav .toggle {
+    display: none;
+  }
+  nav .menu {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+  }
+  nav .menu a {
+    color: black;
+    text-decoration: none;
+    align-self: center;
+    font-style: 13px;
+    padding: 10px 15px;
+    transition: bacground 0.2s linear;
+  }
+  nav .menu a:hover {
+    background: #393e46;
+    border-radius: 3px;
+  }
+  nav .menu a.logo {
+    font-size: 25px;
+    margin-right: 240px;
+}
+@media screen and (max-width: 800px){
+    .toggle{
+        clear: both;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+        width: 100%;
+        color: #000000;
+        background: #ff0090c2;
+        transition: all .1s linear;
+    }
+    .toggle:hover{
+        background: #ff009046;
+        width: 100%;
+    }
+    #checkbox-menu:checked + label .touch li {
+        opacity: 1;
+        visibility: visible;
+        transition: all .7s linear;
+    }
+    #checkbox-menu:checked + label .touch {
+        height: 350px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 0;
+        transition: height .3s linear;
+    }
+    .menu li{
+        display: flex;
+        align-self: center;
+        width: 95%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu li a{
+        width: 95%;
+        text-align: center;
+        align-self: center;
+        align-content: center;
+    }
+}
